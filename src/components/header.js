@@ -2,7 +2,7 @@ import React from "react";
 import {GoSearch} from 'react-icons/go'
 import {GoGear} from 'react-icons/go';
 import Avatar from './avatar';
-import ImageUrl from '../images/Male Avatar2 (1).png';
+import ImageUrl from '../images/avatar images/Male Avatar2 (1).png';
 
 
 const MyHeader = (props) => {

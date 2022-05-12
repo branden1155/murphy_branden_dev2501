@@ -3,8 +3,8 @@ import Header from './components/header';
 import Nav from './components/nav';
 import TheForm from './components/theform';
 import Ads from './components/ads';
-import WorkingMan from './images/Working Man.jpg';
-import Flowers from './images/Flowers Image.jpg';
+import WorkingMan from './images/ads images/Working Man.jpg';
+import Flowers from './images/ads images/Flowers Image.jpg';
 
 class App extends Component {
   render(){
