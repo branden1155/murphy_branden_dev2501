@@ -2,11 +2,11 @@ import React from "react";
 
 const Nav = (props) => {
     return(
-        <div style={styles.navContainer}>
+        <nav style={styles.navContainer}>
             <button style={styles.navBtn}>Newsfeed</button>
             <button style={styles.navBtn}>Messages</button>
             <button style={styles.navBtn}>Watch</button>
-        </div>
+        </nav>
     )
 }
 

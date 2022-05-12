@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import Header from './components/header';
-import Nav from './components/nav';
-import TheForm from './components/theform';
-import Ads from './components/ads';
-import WorkingMan from './images/ads images/Working Man.jpg';
-import Flowers from './images/ads images/Flowers Image.jpg';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import TheForm from './components/TheForm';
+import Ads from './components/Ads';
+import WorkingMan from './images/adsImages/WorkingMan.jpg';
+import Flowers from './images/adsImages/FlowersImage.jpg';
 
 class App extends Component {
   render(){
@@ -12,23 +12,24 @@ class App extends Component {
     return (
       <div>
         <Header style={styles.headerCustom} pgTitle='Chatbook' placeholder="Search..." />
-        <div style={styles.container}>
-            <Nav style={styles.nav} />
-          <div style={styles.main}>
+        <main style={styles.container}>
+          <Nav style={styles.nav} />
+          <section style={styles.main}>
             <TheForm />
-          </div>
+            This is where the list component should go.
+          </section>
           <aside style={styles.ads}>
             Advertisers
             <Ads 
             img={WorkingMan}
             adsTitle="Need Work?"
-            adsContent="Have you been looking for work? Look no more!"/>
+            adsContent="Have you been looking for work? Look no more!" />
             <Ads 
             img={Flowers}
             adsTitle="Need Flowers?"
-            adsContent="Need to give that special someone a wonderful gift? Look no more!"/>
+            adsContent="Need to give that special someone a wonderful gift? Look no more!" />
           </aside>
-        </div>
+        </main>
       </div>
     );
   }
@@ -40,7 +41,8 @@ const styles={
   container: {
     display: 'flex',
     flexDirection: 'row',
-    height: '100vh',
+    justifyContent: 'space-between',
+    height: '100%',
     backgroundColor: '#ff9f1c'
   },
 

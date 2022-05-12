@@ -2,8 +2,8 @@ import React from "react";
 
 const Ads = (props) => {
     return (
-        <div style={styles.adsContainer}>
-            <article style={styles.adsDetail}>
+        // <div style={styles.adsContainer}>
+            <article style={styles.adsContainer}>
                 <img style={styles.imageStyle} src={props.img} alt="{props.imageAlt}"/>
                 <h1>{props.adsTitle}</h1>
                 <p>{props.adsContent}</p>
@@ -12,7 +12,7 @@ const Ads = (props) => {
                     <span type="submit" style={styles.selectButtons}>Learn More!</span>
                 </div>
             </article>
-        </div>
+        // </div>
     )
 }
 

@@ -8,8 +8,7 @@ const Avatar = (props) => {
 
 export default Avatar
 
-const styles={
-    
+const styles = {
     Avatar: {
         height: '55px',
         cursor: 'pointer',

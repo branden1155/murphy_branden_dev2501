@@ -1,7 +1,7 @@
 import React from "react";
-import Avatar from "./avatar";
-import ImageUrl from '../images/avatar images/Male Avatar2 (1).png';
-import PostImg from '../images/post images/React Logo.jpg';
+import Avatar from "./Avatar";
+import ImageUrl from '../images/avatarImages/MaleAvatar2.png';
+import PostImg from '../images/postImages/ReactLogo.jpg';
 import {GoPlus, GoX} from 'react-icons/go';
 
 const TheForm = (props) => {
