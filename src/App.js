@@ -1,8 +1,8 @@
 import React, {useState, Component} from 'react';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import TheForm from './components/TheForm';
-import Ads from './components/Ads';
+import Header from './components/header';
+import Nav from './components/nav';
+import TheForm from './components/theform';
+import Ads from './components/ads';
 import WorkingMan from './images/adsImages/WorkingMan.jpg';
 import Flowers from './images/adsImages/FlowersImage.jpg';
 import PostImg from './images/postImages/ReactLogo.jpg';

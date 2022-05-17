@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "./Avatar";
+import Avatar from "./avatar";
 import ImageUrl from '../images/avatarImages/MaleAvatar2.png';
 
 const TheForm = (props) => {

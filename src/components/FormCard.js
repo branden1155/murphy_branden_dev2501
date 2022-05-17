@@ -1,6 +1,6 @@
 import React from "react";
 import PostImg from '../images/postImages/ReactLogo.jpg';
-import Avatar from "./Avatar";
+import Avatar from "./avatar";
 import ImageUrl from '../images/avatarImages/MaleAvatar2.png';
 import {GoPlus, GoX} from 'react-icons/go';
 
