@@ -18,7 +18,7 @@ const MyHeader = (props) => {
             <div style={styles.rightSide}>
                 <Avatar avatarImg={ImageUrl} />
                 <p style={styles.profileName}>Hello,<br></br> Branden</p>
-                <buttons style={styles.rightIcons}><GoGear /></buttons>
+                <span style={styles.rightIcons}><GoGear /></span>
             </div>
         </header>
     )
@@ -29,7 +29,6 @@ const styles={
         display: 'flex',
         justifyContent: 'space-between',
         backgroundColor: 'white',
-        color: 'black',
         padding: '1%',
         alignItems: 'center',
     },

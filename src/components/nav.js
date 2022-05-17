@@ -12,11 +12,11 @@ const Nav = (props) => {
 
 export default Nav
 
-const styles={
+const styles = {
     navContainer: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        marginTop: '75px',
         alignItems: 'center',
         width: '300px',
         marginBottom: '30%',

@@ -1,38 +1,32 @@
 import React from "react";
 import Avatar from "./Avatar";
 import ImageUrl from '../images/avatarImages/MaleAvatar2.png';
-import PostImg from '../images/postImages/ReactLogo.jpg';
-import {GoPlus, GoX} from 'react-icons/go';
 
 const TheForm = (props) => {
     return(
-        <div style={styles.formCont}>
+        <form
+         style={styles.formCont}
+         onSubmit={props.addItem}>
             <div style={styles.postCont}>
-                <input style={styles.inputTitle} placeholder="Your Post Title..."></input>
-                <input style={styles.inputDescription} placeholder="Your Post Here..."></input>
+                <input
+                    style={styles.inputTitle}
+                    value={props.pTitle}
+                    placeholder="Your Post Title..."
+                    name="pTitle"
+                    onChange={props.getInput} />
+                <input
+                    name="pDesc"
+                    value={props.pDesc}
+                    onChange={props.getInput}
+                    style={styles.inputDescription}
+                    placeholder="Your Post Here..." />
                 <div style={styles.belowForm}>
                     <Avatar avatarImg={ImageUrl} />
                     <p style={styles.belowformP}>What would you like to post, Branden?</p>
                     <button style={styles.postButton}>Post</button> 
                 </div>
             </div>
-                <div style={styles.previouscont}>
-                    <div style={styles.previousAvatar}>
-                        <Avatar avatarImg={ImageUrl} />
-                        <p style={styles.previousavatarInfo}>Branden</p>
-                    <div style={styles.editandDelete}>
-                        <span style={styles.editIcons}><GoPlus /></span>
-                        <span style={styles.editIcons}><GoX /></span>
-                    </div>
-                    </div>
-                    <div style={styles.previousPost}>
-                        <p>React</p>
-                        <p>Today I started Learning about React, and all of its fundamentals!</p>
-                        <img src={PostImg} height="300" widht="400" alt="React Logo"></img>
-                    </div>
-            
-                </div>
-        </div>
+        </form>
     )
 }
 
@@ -46,7 +40,7 @@ const styles = {
         flexDirection: 'column',
         margin: '0% auto',
     },
-
+    
     postCont: {
         display: 'flex',
         flexDirection: 'column',
@@ -60,39 +54,8 @@ const styles = {
         boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
     },
 
-    previouscont: {
-        display: 'flex',
-        flexDirection: 'column',
-        width: '900px',
-        height: '500px',
-        margin: '0% auto',
-        marginTop: '35px',
-        backgroundColor: '#cbf3f0',
-        borderRadius: '8px 8px 8px',
-        overflow: 'none',
-        boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-    },
-
-    previousAvatar: {
-        display: 'flex',
-        flexDirection: 'row',
-        margin: '10px'
-    },
-
-    previousavatarInfo: {
-        marginLeft: '15px',
-    },
-
-    previousPost: {
-        display: 'flex',
-        flexDirection: 'column',
-        marginLeft: '25px',
-        marginRight: '25px',
-    },
-
     inputTitle: {
         display: 'flex',
-        textAlign: 'center',
         height: '35px',
         width: '35%',
         fontWeight: 'bold',
@@ -108,7 +71,7 @@ const styles = {
     inputDescription: {
         display: 'flex',
         textAlign: 'center',
-        height: '35px',
+        height: '150px',
         width: '95%',
         fontWeight: 'bold',
         color: 'black',
@@ -146,16 +109,4 @@ const styles = {
         boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
         borderRadius: '5px 5px 5px'
     },
-
-    editandDelete: {
-        display: 'flex',
-        marginLeft: '75%'
-    },
-
-    editIcons: {
-        borderStyle: 'none',
-        border: 'none',
-        padding: '10px',
-        cursor: 'pointer',
-    }
 }

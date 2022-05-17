@@ -24,7 +24,7 @@ const styles={
         flexDirection: 'column',
         width: '250px',
         height: '325px',
-        padding: '1%',
+        padding: '20px',
         backgroundColor: '#ff9f1c',
         color: 'white',
         justifyContent: 'space-between',
