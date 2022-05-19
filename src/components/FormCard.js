@@ -1,6 +1,6 @@
 import React from "react";
-import PostImg from '../images/postImages/ReactLogo.jpg';
-import Avatar from "./avatar";
+// import PostImg from '../images/postImages/ReactLogo.jpg';
+import Avatar from "./Avatar";
 import ImageUrl from '../images/avatarImages/MaleAvatar2.png';
 import {GoPlus, GoX} from 'react-icons/go';
 
@@ -18,11 +18,10 @@ const FormCard = (props) => {
             <div style={styles.previousPost}>
                 <h1>{props.val.pTitle}</h1>
                 <p>{props.val.pDesc}</p>
-                <img src={props.val.pImg} alt={props.val.pAlt} height="300" widht="400"></img>
+                <img src={props.val.pImg} alt={props.val.pAlt} height="300" widht="400" />
             </div>
         </article>
     )
-   
 }
 
 export default FormCard

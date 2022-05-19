@@ -1,12 +1,12 @@
 import React from "react";
-import Avatar from "./avatar";
+import Avatar from "./Avatar";
 import ImageUrl from '../images/avatarImages/MaleAvatar2.png';
 
 const TheForm = (props) => {
     return(
         <form
-         style={styles.formCont}
-         onSubmit={props.addItem}>
+            style={styles.formCont}
+            onSubmit={props.addItem}>
             <div style={styles.postCont}>
                 <input
                     style={styles.inputTitle}

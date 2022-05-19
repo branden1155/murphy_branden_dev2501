@@ -1,7 +1,7 @@
 import React from "react";
 import {GoSearch} from 'react-icons/go'
 import {GoGear} from 'react-icons/go';
-import Avatar from './avatar';
+import Avatar from './Avatar';
 import ImageUrl from '../images/avatarImages/MaleAvatar2.png';
 
 

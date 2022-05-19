@@ -1,8 +1,8 @@
-import React, {useState, Component} from 'react';
-import Header from './components/header';
-import Nav from './components/nav';
-import TheForm from './components/theform';
-import Ads from './components/ads';
+import React, {Component} from 'react';
+import Header from './components/MyHeader';
+import Nav from './components/Nav';
+import TheForm from './components/TheForm';
+import Ads from './components/Ads';
 import WorkingMan from './images/adsImages/WorkingMan.jpg';
 import Flowers from './images/adsImages/FlowersImage.jpg';
 import PostImg from './images/postImages/ReactLogo.jpg';
@@ -27,6 +27,14 @@ class App extends Component {
     color: 'red',
   }
 
+  //componentdidMount section, changing the chatbook to blue.
+  componentDidMount() {
+    console.log('ComponentDidMount() Lifecycle')
+    setTimeout(() => {
+      this.setState({ color: 'blue'});
+    }, 5000);
+  }
+
 //getting the input from inside the Title and post Input field.
   getInput = e => {
     const value = e.target.value;
@@ -45,38 +53,32 @@ class App extends Component {
   }
 
   //THIS MY ATTEMPT AT FILTER METHOD. COULD NOT GET TO WORK. KEEPS DELETING ALL POST.
-  //removeItem = key => {
-    //const newPost = this.state.blogPost.filter(postId => postId.id !== postId.key) 
-    //this.setState({
-      //blogPost: newPost
-    //})
+  removeItem = key => {
+    // const newPost = this.state.blogPost.filter(postId => postId.id !== postId.key) 
+    // arrayObject.filter(callback, contextObject);
+    const newPost = this.state.blogPost.filter((element,post) => post !== key) 
+    this.setState({
+      blogPost: newPost
+    })
 
-    //console.log(newPost)
-    //console.log(key)
-  //}
+    console.log(newPost)
+    console.log(key)
+  }
       
   //removing blog post via splice method, this effects and modifys the state, which is a no go. -----------------
-  removeItem = key => {
-    const newPost = [...this.state.blogPost];
-    newPost.splice(key, 1);
-    this.setState(() => ({
-      blogPost: newPost
-    }));
-  }
-
-  //componentdidMount section, changing the chatbook to blue.
-  componentDidMount() {
-    console.log('ComponentDidMount() Lifecycle')
-    setTimeout(() => {
-      this.setState({ color: 'blue'});
-    }, 5000);
-  }
+  // removeItem = key => {
+  //   const newPost = [...this.state.blogPost];
+  //   newPost.splice(key, 1);
+  //   this.setState(() => ({
+  //     blogPost: newPost
+  //   }));
+  // }
 
   //rendering webpage.
   render(){
     let blogList = this.state.blogPost.map((element, i) => {
       return (
-       <FormCard
+        <FormCard
           key={i}
           val={element}
           delMe={() =>this.removeItem(i)}
