@@ -9,6 +9,7 @@ import Spending from './pages/Spending'
 import Nav from './components/Nav';
 import Settings from './pages/Settings'
 
+//app function to run webpage
 function App() {
   return(
     <div>
@@ -32,7 +33,8 @@ function App() {
 }
 
 export default App;
-  
+
+//styling for sections above
 const styles={
   container: {
     display: 'flex',
@@ -49,7 +51,6 @@ const styles={
   nav: {
     display: 'flex',
     flexDirection: 'row',
-    marginRight: '150px',
   },
 
   

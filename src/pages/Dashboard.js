@@ -4,17 +4,20 @@ import ChartPie from "../components/Charts/ChartPie";
 
 function Dashboard(){
 
+//hooks that are used on the Horizontal Chart
     const [chartHorz] = useState([
         {chartHeader: 'Income Overview'},
         {chartHeader: 'Savings Overview'}
     ]);
 
+//hooks that are used on the Pie Chart
     const [chartPie] = useState ([
         {chartpieHeader: 'Global Income'},
         {chartpieHeader: 'Personal Savings'},
         {chartpieHeader: 'Total Spending'}
     ]);
 
+//map function for Horizontal Chart and Pie Chart
     return(
         <section style={styles.container}>
             <h1 style={styles.dashTitle}>Dashboard</h1>
@@ -34,7 +37,7 @@ function Dashboard(){
 }
 
 export default Dashboard;
-
+//styles used for the dashboard link
 const styles={
     container: {
         display: 'flex',
@@ -53,13 +56,17 @@ const styles={
     },
 
     dashTitle: {
-        marginLeft: '75px',
+        marginTop: '-75px',
+        marginLeft: '45px',
+        padding: '0',
+
     },
 
     chartPie:{
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
-        margin: '25px',
+        overflow: 'hidden',
+        margin: '65px',
     }
 }

@@ -6,6 +6,8 @@ import {BsFillPiggyBankFill} from "react-icons/bs"
 import {GiPayMoney} from "react-icons/gi"
 import NavLogo from '../images/navLogo.png'
 
+//component for the navigation links displayed on left side of screen
+//these include React Routes
 const Nav = () => {
     return(
         <nav style={styles.nav}>
@@ -17,11 +19,10 @@ const Nav = () => {
             <Link to="/spending" style={styles.links}><GiPayMoney /></Link>
         </nav>
     )
-
 }
 
 export default Nav;
-
+//styles for the navigation
 const styles={
     nav: {
         display: 'flex',

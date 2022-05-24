@@ -1,5 +1,6 @@
 import React from "react";
 
+//function/component for the Savings page
 function Savings(){
     return(
         <section style={styles.container}>
@@ -11,7 +12,7 @@ function Savings(){
 }
 
 export default Savings;
-
+//styles for the savings page
 const styles={
     container: {
         display: 'flex',

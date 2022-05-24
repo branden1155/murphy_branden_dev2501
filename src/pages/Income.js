@@ -1,5 +1,6 @@
 import React from "react";
 
+//function/component for the Income Page
 function Income(){
     return(
         <section style={styles.container}>
@@ -11,7 +12,7 @@ function Income(){
 }
 
 export default Income;
-
+//styles for Income page
 const styles={
     container: {
         display: 'flex',

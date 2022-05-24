@@ -1,5 +1,6 @@
 import React from "react";
 
+//function/component for the Settings Page
 function Settings(){
     return(
         <section style={styles.container}>
@@ -11,7 +12,7 @@ function Settings(){
 }
 
 export default Settings;
-
+//styles for the settings page
 const styles={
     container: {
         display: 'flex',

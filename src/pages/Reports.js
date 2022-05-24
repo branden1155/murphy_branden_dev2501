@@ -1,5 +1,6 @@
 import React from "react";
 
+//function/component for the Reports page
 function Reports() {
     return(
         <section style={styles.container}>
@@ -11,7 +12,7 @@ function Reports() {
 }
 
 export default Reports;
-
+//styles for the reports page
 const styles={
     container: {
         display: 'flex',

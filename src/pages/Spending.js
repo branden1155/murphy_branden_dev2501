@@ -1,5 +1,6 @@
 import React from "react";
 
+//function/component for the spending page
 function Spending(){
     return(
         <section style={styles.container}>
@@ -11,7 +12,7 @@ function Spending(){
 }
 
 export default Spending;
-
+//styles for the spending page
 const styles={
     container: {
         display: 'flex',
