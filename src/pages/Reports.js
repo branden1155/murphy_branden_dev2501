@@ -1,16 +1,16 @@
 import React from "react";
 
-function ChartDash() {
+function Reports() {
     return(
         <section style={styles.container}>
-            <h1>ChartDash</h1>
+            <h1>Reports</h1>
             <p>Some Stuff Here</p>
             <p>Some Stuff Here</p>
         </section>
     )
 }
 
-export default ChartDash;
+export default Reports;
 
 const styles={
     container: {

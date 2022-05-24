@@ -1,16 +1,16 @@
 import React from "react";
 
-function FormDash() {
+function Spending(){
     return(
         <section style={styles.container}>
-            <h1>ChartDash</h1>
+            <h1>Spending</h1>
             <p>Some Stuff Here</p>
             <p>Some Stuff Here</p>
         </section>
     )
 }
 
-export default FormDash;
+export default Spending;
 
 const styles={
     container: {

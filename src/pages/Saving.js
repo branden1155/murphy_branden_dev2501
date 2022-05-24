@@ -1,22 +1,22 @@
 import React from "react";
 
-function Dashboard(){
+function Savings(){
     return(
         <section style={styles.container}>
-            <p>Logo PlaceHolder</p>
-            <h1>Dashboard</h1>
-            <p>Place Your Charts Here</p>
+            <h1>Savings</h1>
+            <p>Some Stuff Here</p>
+            <p>Some Stuff Here</p>
         </section>
     )
 }
 
-export default Dashboard;
+export default Savings;
 
 const styles={
     container: {
         display: 'flex',
         flexDirection: 'column',
-        flex: 2,
         height: '100vh',
+        width: '99vh',
     }
 }
