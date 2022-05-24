@@ -43,7 +43,16 @@ const styles={
 
   items: {
     width: '100%',
-  }
+    
+  },
+
+  nav: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginRight: '150px',
+  },
+
+  
   
 }
 
