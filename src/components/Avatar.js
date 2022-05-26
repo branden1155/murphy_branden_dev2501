@@ -18,16 +18,15 @@ const Avatar = () => {
 
 export default Avatar;
 //styling for avatar
-const styles={
+const styles = {
     container: {
         display: 'flex',
         flexDirection: 'row',
-        margin: '15px',
+        // margin: '15px',
         justifyContent: 'center',
         alignItems: 'center',
-
+        width: '20%'
     },
-
     img: {
         display: 'flex',
         flexDirection: 'row',
@@ -37,18 +36,14 @@ const styles={
         borderRadius: '50%',
         color: 'white'
     },
-
     imgSettings: {
         marginRight: '20px',
         textDecoration: 'none',
         color: 'inherit',
     },
-
     avatarName: {
         color: '#031926',
         fontWeight: 'bold',
     }
-
-
 }
 

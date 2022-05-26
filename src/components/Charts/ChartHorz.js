@@ -52,9 +52,9 @@ const ChartHorz = ({ChartHorz}) => {
     return(
         <article key={ChartHorz.id} style={styles.graphDisplay}>
             <h1 style={styles.chartTitle}>{ChartHorz.chartHeader}</h1>
-            <AreaChart width={600} height={100} data={data} margin={{top: 0, left: 0, right: 0, bottom: 0}}>
+            <AreaChart width={300} height={100} data={data} margin={{top: 0, left: 0, right: 0, bottom: 0}}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
+            <XAxis dataKey="animal" />
             <YAxis />
             <Tooltip />
             <Area type="monotone" dataKey="uv" stroke="#031926" fill="#031926" />

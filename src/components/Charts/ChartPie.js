@@ -3,10 +3,13 @@ import { PieChart,Pie } from 'recharts';
 
 //this is the data for the Pie chart
 const data01 = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
+    { 
+        name: 'Group A', 
+        value: 400 
+    },
+    { name: 'Group B', value: 300 },
+    { name: 'Group C', value: 300 },
+    { name: 'Group D', value: 200 },
 ];
 //secondary data for the pie Chart
 const data02 = [
@@ -28,7 +31,7 @@ const ChartPie = ({ChartPie}) => {
     return(
         <article key={ChartPie.id} style={styles.chartpieDisplay}>
             <h1 style={styles.chartpieH1}>{ChartPie.chartpieHeader}</h1>
-            <PieChart width={350} height={250}>
+            <PieChart width={250} height={250}>
                 <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={60} fill= "#031926" />
                 <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill= "#031926" label />
             </PieChart>

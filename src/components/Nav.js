@@ -32,16 +32,13 @@ const styles={
         backgroundColor: '#031926',
         padding: '2rem',
     },
-
     img: {
         height: '25px',
         width: '25px',
         marginBottom: '50px'
     },
-
     links: {
         padding: '10px',
         color: '#f4e9cd'
     }
-
 }

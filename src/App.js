@@ -12,11 +12,11 @@ import Settings from './pages/Settings'
 //app function to run webpage
 function App() {
   return(
-    <div>
-      <main style={styles.container}>
-        <Nav style={styles.nav} />
-        <section style={styles.items}>
-          <Header />
+    <div style={styles.container}>
+      <Nav />
+      <section style={styles.items}>
+        <Header />
+        <main style={styles.routes}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="Dashboard" element={<Dashboard />} />
@@ -26,8 +26,8 @@ function App() {
             <Route path="Spending" element={<Spending />} />
             <Route path="Settings" element={<Settings />} />
           </Routes>
-        </section>
-      </main>
+        </main>
+      </section>
     </div>
   )
 }
@@ -41,19 +41,16 @@ const styles={
     flexDirection: 'row',
     backgroundColor: '#9dbebb',
     width: '100%',
+    height: '100vh',
+    overflow: 'hidden'
   },
-
   items: {
     width: '100%',
-    
-  },
-
-  nav: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column'
   },
-
-  
-  
+  routes: {
+    overflow: 'scroll',
+  }
 }
 

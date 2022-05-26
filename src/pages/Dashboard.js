@@ -42,8 +42,8 @@ const styles={
     container: {
         display: 'flex',
         flexDirection: 'column',
-        height: '100vh',
         justifyContent: 'center',
+        padding: '2%',
     },
 
     chartHorz: {
@@ -51,14 +51,14 @@ const styles={
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '100%',
-        overflow: 'hidden',
+        padding: '2%',
+        // width: '100%',
     },
 
     dashTitle: {
-        marginTop: '-75px',
-        marginLeft: '45px',
-        padding: '0',
+        // marginTop: '-75px',
+        // marginLeft: '45px',
+        // padding: '0',
 
     },
 
