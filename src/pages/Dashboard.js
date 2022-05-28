@@ -1,6 +1,6 @@
 import {React, useState} from "react";
-import ChartHorz from "../components/Charts/ChartHorz";
-import ChartPie from "../components/Charts/ChartPie";
+import ChartHorz from "../components/charts/ChartHorz";
+import ChartPie from "../components/charts/ChartPie";
 
 function Dashboard(){
 
