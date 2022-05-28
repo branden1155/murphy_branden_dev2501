@@ -4,7 +4,7 @@ import {FiSettings} from "react-icons/fi"
 import { Link } from "react-router-dom";
 
 //Component - profile avatar for the header with working link on profile image
-const Avatar = () => {
+const Avatar = (props) => {
     return(
         <div style={styles.container}>
             <Link to="/Settings" style={styles.imgSettings}><FiSettings /></Link>
