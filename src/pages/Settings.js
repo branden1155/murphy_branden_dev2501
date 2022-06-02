@@ -3,7 +3,7 @@ import UserForm from "../components/UserForm";
 
 //function/component for the Settings Page
 function Settings(){
- 
+
     //React Hooks for random user API
     const [userData, setuserData] = useState(null);
 
@@ -34,7 +34,7 @@ function Settings(){
                 postCode={userData.location.postcode}
                 phoneNumber={userData.phone}
                 userPicture={userData.picture.medium}
-             />}
+            />}
         </section>
     )
 }
